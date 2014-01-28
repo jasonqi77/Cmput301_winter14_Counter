@@ -25,11 +25,21 @@ public class FileManager
 	private CounterCollection counter;
 	private Gson gson = new Gson();
 	private Context context;
+	
+	/**
+	 * Constructor of FileManager
+	 * @param context -- the context of the calling activity
+	 */
 	public FileManager(Context context)
 	{
 		this.context = context;
 	}
 	
+	/**
+	 * Load the counter collection from the file
+	 * @return
+	 * The counter collection
+	 */
 	public CounterCollection loadFromFile() {
         //counters = new ArrayList<CounterDetail>();
 		counter = new CounterCollection();
@@ -56,7 +66,10 @@ public class FileManager
         return counter;
 	}	
 	
-	
+	/**
+	 * Save the counter collection to the file
+	 * @param counters -- counter collection
+	 */
 	public void saveInFile(CounterCollection counters) {
 		try {
 			FileOutputStream fos = context.openFileOutput(FILENAME,

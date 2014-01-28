@@ -98,6 +98,7 @@ public class SummaryActivity extends Activity
 			testDate.setDate(testDate.getDate()+diff);
 		}
 		
+		// A for loop used to decides if the next press date is in the same year/month/week/day/hour
 		for (int i=1; i<date.size(); i++)
 		{
 			if (date.get(i).getYear() == curr_year)
@@ -162,7 +163,6 @@ public class SummaryActivity extends Activity
 						resetHour();
 						resetDay();
 						curr_day = date.get(i).getDate();
-						//curr_week = date.get(i).getDay();
 						curr_hour = date.get(i).getHours();
 						count_day++;
 						count_hour++;
@@ -195,7 +195,6 @@ public class SummaryActivity extends Activity
 						hour.add(mon[curr_month] + " " + curr_day + " " + curr_hour + ":00AM -- " + count_hour);
 					}
 					day.add(mon[curr_month] + " " + curr_day + " -- " + count_day);
-					//week.add("Week of " + mon[curr_month] + " " + curr_day + " -- " + count_week);
 					month.add("Month of " + mon[curr_month] + " -- " + count_month);
 					resetDay();
 					resetHour();
@@ -203,7 +202,6 @@ public class SummaryActivity extends Activity
 
 						curr_month = date.get(i).getMonth();
 						curr_day = date.get(i).getDate();
-						//curr_week = date.get(i).getDay();
 						curr_hour = date.get(i).getHours();
 						count_month++;
 						count_day++;
@@ -237,7 +235,6 @@ public class SummaryActivity extends Activity
 					hour.add(mon[curr_month] + " " + curr_day + " " + curr_hour + ":00AM -- " + count_hour);
 				}
 				day.add(mon[curr_month] + " " + curr_day + " -- " + count_day);
-				//week.add("Week of " + mon[curr_month] + " " + curr_day + " -- " + count_week);
 				month.add("Month of " + mon[curr_month] + " -- " + count_month);
 				resetDay();
 				resetHour();
@@ -245,7 +242,6 @@ public class SummaryActivity extends Activity
 
 					curr_month = date.get(i).getMonth();
 					curr_day = date.get(i).getDate();
-					//curr_week = date.get(i).getDay();
 					curr_hour = date.get(i).getHours();
 					curr_year = date.get(i).getYear();
 					count_month++;
@@ -255,8 +251,8 @@ public class SummaryActivity extends Activity
 			
 		}
 		
-		//#########################################################################
-		//finish searching
+		
+		//searching finished 
 		if (count_hour != 0)
 		{
 			if (curr_hour>=12)
@@ -311,9 +307,13 @@ public class SummaryActivity extends Activity
 		
 	}
 	
-	public static class DateComparator implements Comparator<Date> {
+	/**
+	 * The comparator of Date
+	 * Used to sort the pressed dates of a counter
+	 */
+	public static class DateComparator implements Comparator<CountOccurredDate> {
 	      @Override
-	      public int compare(Date s, Date t) {
+	      public int compare(CountOccurredDate s, CountOccurredDate t) {
 	         return s.compareTo(t);
 	      }
 	  }
@@ -326,29 +326,38 @@ public class SummaryActivity extends Activity
 		
 	}
 	
+	/**
+	 * reset the count for one day
+	 */
 	static void resetDay()
 	{
 		count_day=0;
 	}
 	
+	/**
+	 * reset the count of one hour
+	 */
 	static void resetHour()
 	{
 		count_hour=0;
 	}
 	
+	/**
+	 * reset the count of one week
+	 */
 	static void resetWeek()
 	{
 		count_week=0;
 	}
 	
+	/**
+	 * reset the count of one month
+	 */
 	static void resetMonth()
 	{
 		count_month=0;
 	}
-	
-
-	
-	
+		
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{

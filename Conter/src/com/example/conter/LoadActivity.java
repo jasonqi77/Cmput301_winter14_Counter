@@ -103,7 +103,11 @@ public class LoadActivity extends Activity
 	}
 	
 	
-	
+	/**
+	 * 
+	 * The comparator of counters. U
+	 * Used to sort the counter based on the number of count.
+	 */
 	public static class CountComparator implements Comparator<Counter> {
 	      @Override
 	      public int compare(Counter s, Counter t) {
@@ -111,6 +115,9 @@ public class LoadActivity extends Activity
 	      }
 	  }
 
+	/**
+	 * Disable the back key
+	 */
 	@Override
 	public void onBackPressed() {
 		Toast.makeText(LoadActivity.this,

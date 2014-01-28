@@ -36,7 +36,6 @@ public class CounterActivity extends Activity
 				
 		Intent intent = getIntent();
 		cname = intent.getStringExtra("counterName");
-		//num = intent.getIntExtra("count", num);
 		num=0;
 		
 		counter = fm.loadFromFile();
@@ -117,6 +116,9 @@ public class CounterActivity extends Activity
 	    
 	}
 	
+	/**
+	 * Disable the back key
+	 */
 	@Override
 	public void onBackPressed() {
 		Toast.makeText(CounterActivity.this,

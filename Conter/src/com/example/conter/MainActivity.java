@@ -54,9 +54,12 @@ public class MainActivity extends Activity
 	    });
 	}
 
+	/**
+	 * Disable the back key
+	 */
 	@Override
 	public void onBackPressed() {
-		Toast.makeText(CreateActivity.this,
+		Toast.makeText(MainActivity.this,
                 "Back Key is Disabled!!!", Toast.LENGTH_SHORT)
                 .show();
 	}

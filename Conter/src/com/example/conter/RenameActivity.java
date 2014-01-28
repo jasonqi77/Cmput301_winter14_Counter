@@ -36,7 +36,6 @@ public class RenameActivity extends Activity
 		
 		Intent intent = getIntent();
 		oldName = intent.getStringExtra("counterName");
-		//num = intent.getIntExtra("count", num);
 		counter = fm.loadFromFile();
 		
 	    submit.setOnClickListener(new OnClickListener() {
@@ -77,7 +76,6 @@ public class RenameActivity extends Activity
 	            		counter.setName(cname, index);
 	            		fm.saveInFile(counter);
 	            		intent.putExtra("counterName", cname);
-			            //intent.putExtra("count", num);
 			            startActivity(intent);
 	            	}
 	            	
@@ -88,7 +86,9 @@ public class RenameActivity extends Activity
 				
 	}
 	
-
+	/**
+	 * Disable the back key
+	 */
 	@Override
 	public void onBackPressed() {
 		Toast.makeText(RenameActivity.this,

@@ -18,7 +18,6 @@ public class CreateActivity extends Activity
 {
 	private EditText input;
 	private Button submitButton, cancel;
-	//private ArrayList<CounterDetail> counters;
 	private CounterCollection counter;
 	private FileManager fm = new FileManager(this);
 	
@@ -66,7 +65,6 @@ public class CreateActivity extends Activity
 		            		counter.add(counterDetail);
 		            		fm.saveInFile(counter);
 			            	intent.putExtra("counterName", name);
-				            //intent.putExtra("count", 0);
 				            
 				            startActivity(intent);
 		            	}		            	
@@ -87,6 +85,9 @@ public class CreateActivity extends Activity
 		    });
 	}
 	
+	/**
+	 * Disable the back key
+	 */
 	@Override
 	public void onBackPressed() {
 		Toast.makeText(CreateActivity.this,
