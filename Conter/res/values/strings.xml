@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conter</string>
+    <string name="action_settings">Settings</string>
+    <string name="Create">Create a counter</string>
+    <string name="Load">Load a counter</string>
+    <string name="name">Input the new counter name here</string>
+    <string name="cname">Input the counter name here</string>
+    <string name="title_activity_create">CreateActivity</string>
+    <string name="title_activity_load">LoadActivity</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_counter">CounterActivity</string>
+    <string name="add">Add</string>
+    <string name="reset">Reset</string>
+    <string name="rename">Rename</string>
+    <string name="detail">Counter Summary</string>
+    <string name="cancel">Back to Main</string>
+    <string name="hello_world">Cancel</string>
+    <string name="title_activity_rename">RenameActivity</string>
+    <string name="title_activity_summary">SummaryActivity</string>
+    <string name="delete">Delete a counter</string>
+    <string name="title_activity_delete">DeleteActivity</string>
+
+</resources>
