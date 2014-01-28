@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 /**
  * 
  * @author bqi
@@ -53,6 +54,12 @@ public class MainActivity extends Activity
 	    });
 	}
 
+	@Override
+	public void onBackPressed() {
+		Toast.makeText(CreateActivity.this,
+                "Back Key is Disabled!!!", Toast.LENGTH_SHORT)
+                .show();
+	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
