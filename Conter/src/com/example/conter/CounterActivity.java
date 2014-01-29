@@ -3,7 +3,6 @@ package com.example.conter;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,17 +10,29 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class CounterActivity extends Activity
 {
-	private TextView name, count;
-	private Button add, reset, rename, detail, cancel;
-	private int num=0, index;
+	private TextView name;
+	private TextView count;
+	private Button add;
+	private Button reset;
+	private Button rename;
+	private Button detail;
+	private Button cancel;
+	private int num=0;
+	private int index;
 	private String cname;
+	/**
+	 * @uml.property  name="counter"
+	 * @uml.associationEnd  
+	 */
 	private CounterCollection counter;
+	/**
+	 * @uml.property  name="fm"
+	 * @uml.associationEnd  
+	 */
 	private FileManager fm = new FileManager(this);
 
 	@Override

@@ -3,12 +3,13 @@ package com.example.conter;
 import java.util.ArrayList;
 
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class CounterCollection
 {
+	/**
+	 * @uml.property  name="counters"
+	 */
 	private ArrayList<Counter> counters;
 	
 	/**
@@ -22,8 +23,8 @@ public class CounterCollection
 	
 	/**
 	 * Get all existing counters
-	 * @return
-	 * a list of existing counters
+	 * @return  a list of existing counters
+	 * @uml.property  name="counters"
 	 */
 	public ArrayList<Counter> getCounters()
 	{

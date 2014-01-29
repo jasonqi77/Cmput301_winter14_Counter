@@ -10,15 +10,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class CreateActivity extends Activity
 {
 	private EditText input;
-	private Button submitButton, cancel;
+	private Button submitButton;
+	private Button cancel;
+	/**
+	 * @uml.property  name="counter"
+	 * @uml.associationEnd  
+	 */
 	private CounterCollection counter;
+	/**
+	 * @uml.property  name="fm"
+	 * @uml.associationEnd  
+	 */
 	private FileManager fm = new FileManager(this);
 	
 	@Override

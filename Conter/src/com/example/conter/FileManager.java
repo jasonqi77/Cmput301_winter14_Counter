@@ -14,14 +14,16 @@ import android.content.Context;
 import com.google.gson.Gson;
 
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class FileManager
 {
 
 	private static final String FILENAME = "counter3.sav";
+	/**
+	 * @uml.property  name="counter"
+	 * @uml.associationEnd  
+	 */
 	private CounterCollection counter;
 	private Gson gson = new Gson();
 	private Context context;

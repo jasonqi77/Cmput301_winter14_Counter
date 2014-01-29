@@ -12,19 +12,29 @@ import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class SummaryActivity extends Activity
 {
+	/**
+	 * @uml.property  name="counter"
+	 * @uml.associationEnd  
+	 */
 	private CounterCollection counter;
 	private ArrayList<Counter> counters;
 	private ArrayList<CountOccurredDate> date;
-	private ArrayList<String> hour, week, month, day;
+	private ArrayList<String> hour;
+	private ArrayList<String> week;
+	private ArrayList<String> month;
+	private ArrayList<String> day;
 	private ArrayList<String> summary;
 	private String name;
-	private int index, curr_hour, curr_week, curr_month, curr_day, curr_year;
+	private int index;
+	private int curr_hour;
+	private int curr_week;
+	private int curr_month;
+	private int curr_day;
+	private int curr_year;
 	private static int count_hour;
 	private static int count_week;
 	private static int count_month;
@@ -33,7 +43,15 @@ public class SummaryActivity extends Activity
 	private ListView detail;
 	private ArrayAdapter<String> adapter;
 	private int diff;
+	/**
+	 * @uml.property  name="testDate"
+	 * @uml.associationEnd  
+	 */
 	private CountOccurredDate testDate;
+	/**
+	 * @uml.property  name="fm"
+	 * @uml.associationEnd  
+	 */
 	private FileManager fm = new FileManager(this);
 	
 	@Override

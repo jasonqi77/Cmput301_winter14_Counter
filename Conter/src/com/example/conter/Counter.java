@@ -3,15 +3,26 @@ package com.example.conter;
 import java.util.ArrayList;
 
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class Counter
 {
+	/**
+	 * @uml.property  name="count"
+	 */
 	private int count;
+	/**
+	 * @uml.property  name="name"
+	 */
 	private String name="";
+	/**
+	 * @uml.property  name="date"
+	 */
 	private ArrayList<CountOccurredDate> date;
+	/**
+	 * @uml.property  name="newDate"
+	 * @uml.associationEnd  
+	 */
 	private CountOccurredDate newDate;
 	
 	/**
@@ -28,8 +39,8 @@ public class Counter
 	
 	/**
 	 * get counter's current count
-	 * @return 
-	 * the counter's current count
+	 * @return    the counter's current count
+	 * @uml.property  name="count"
 	 */
 	public int getCount()
 	{
@@ -39,7 +50,8 @@ public class Counter
 	
 	/**
 	 * set the counter's count
-	 * @param count -- the number of count
+	 * @param count  -- the number of count
+	 * @uml.property  name="count"
 	 */
 	public void setCount(int count)
 	{
@@ -49,8 +61,8 @@ public class Counter
 	
 	/**
 	 * get the counter's name
-	 * @return
-	 * the counter's name
+	 * @return  the counter's name
+	 * @uml.property  name="name"
 	 */
 	public String getName()
 	{
@@ -60,7 +72,8 @@ public class Counter
 	
 	/**
 	 * set thecounter's name
-	 * @param name -- counter's name
+	 * @param name  -- counter's name
+	 * @uml.property  name="name"
 	 */
 	public void setName(String name)
 	{
@@ -79,8 +92,8 @@ public class Counter
 	
 	/**
 	 * get the time of each count occurred
-	 * @return
-	 * the list of times that all counts occured
+	 * @return  the list of times that all counts occured
+	 * @uml.property  name="date"
 	 */
 	public ArrayList<CountOccurredDate> getDate()
 	{

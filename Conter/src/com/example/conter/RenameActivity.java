@@ -10,18 +10,24 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class RenameActivity extends Activity
 {
-	private String cname, oldName;
-	private int num;
+	private String cname;
+	private String oldName;
 	private EditText name;
 	private Button submit;
+	/**
+	 * @uml.property  name="counter"
+	 * @uml.associationEnd  
+	 */
 	private CounterCollection counter;
 	private int index;
+	/**
+	 * @uml.property  name="fm"
+	 * @uml.associationEnd  
+	 */
 	private FileManager fm = new FileManager(this);
 	
 	@Override

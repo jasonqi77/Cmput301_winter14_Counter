@@ -16,18 +16,25 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 /**
- * 
- * @author bqi
- *
+ * @author  bqi
  */
 public class LoadActivity extends Activity
 {
-	private Button submitButton, cancel;
+	private Button submitButton;
+	private Button cancel;
 	private EditText input;
+	/**
+	 * @uml.property  name="counter"
+	 * @uml.associationEnd  
+	 */
 	private CounterCollection counter;
 	private ListView counterName;
 	private ArrayAdapter<Counter> adapter;
 	private ArrayList<Counter> counters;
+	/**
+	 * @uml.property  name="fm"
+	 * @uml.associationEnd  
+	 */
 	private FileManager fm = new FileManager(this);
 	@Override
 	protected void onCreate(Bundle savedInstanceState)

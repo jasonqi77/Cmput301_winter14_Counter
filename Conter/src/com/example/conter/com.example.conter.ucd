@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="995,875" id="com.example.conter" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020436F6E7465722F627169">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="CounterCollection" location="50,530" size="191,175" id="com.example.conter/CounterCollection" runTimeClassModel="resetDate(I),addDate(I),setName(Ljava.lang.String;I),delete(I),add(Lcom.example.conter.Counter;),CounterCollection(),counters,setCount(II)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="counters" id="com.example.conter/CounterCollection#counters"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,108">
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="com.example.conter/CounterCollection#add(Lcom.example.conter.Counter;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addDate" id="com.example.conter/CounterCollection#addDate(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="com.example.conter/CounterCollection#delete(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetDate" id="com.example.conter/CounterCollection#resetDate(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCount" id="com.example.conter/CounterCollection#setCount(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setName" id="com.example.conter/CounterCollection#setName(Ljava.lang.String;I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/FileManager@" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="76,175" id="com.example.conter/CounterCollection@counter+com.example.conter/FileManager@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="133,712" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="101,712" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,0" id="com.example.conter/CounterCollection@counter+com.example.conter/FileManager@|com.example.conter/FileManager#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.example.conter/CounterCollection-Standard::Call->com.example.conter/Counter*com.example.conter/CounterCollection-Soyatec::Import->com.example.conter/Counter" source="//@children.0" target="//@children.3" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="70,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="102,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,157"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="FileManager" location="61,770" size="132,85" id="com.example.conter/FileManager" runTimeClassModel="saveInFile(Lcom.example.conter.CounterCollection;),loadFromFile(),FileManager(Landroid.content.Context;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,36">
+      <children xsi:type="editmodel:MethodEditModel" name="loadFromFile" id="com.example.conter/FileManager#loadFromFile()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveInFile" id="com.example.conter/FileManager#saveInFile(Lcom.example.conter.CounterCollection;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.example.conter/FileManager-Standard::Instantiate->com.example.conter/CounterCollection*com.example.conter/FileManager-Soyatec::Import->com.example.conter/CounterCollection" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate»" size="104,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="132,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,175"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.3/@sourceConnections.1" name="CountOccurredDate" location="57,50" size="186,67" id="com.example.conter/CountOccurredDate" runTimeClassModel="CountOccurredDate(J),CountOccuredDate(III),CountOccurredDate(IIIII),CountOccurredDate(IIIIII),CountOccurredDate(),CountOccurredDate(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+      <children xsi:type="editmodel:MethodEditModel" name="CountOccuredDate" id="com.example.conter/CountOccurredDate#CountOccuredDate(III)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.1" name="Counter" location="64,290" size="230,157" id="com.example.conter/Counter" runTimeClassModel="count,name,resetDate(),addDate(),date,Counter(Ljava.lang.String;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="207,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="count" id="com.example.conter/Counter#count"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="date" id="com.example.conter/Counter#date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="com.example.conter/Counter#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,54">
+      <children xsi:type="editmodel:MethodEditModel" name="addDate" id="com.example.conter/Counter#addDate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetDate" id="com.example.conter/Counter#resetDate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="com.example.conter/Counter#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CountOccurredDate@newDate+com.example.conter/Counter@" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" id="com.example.conter/CountOccurredDate@newDate+com.example.conter/Counter@|com.example.conter/Counter#" attachSource="true" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="146,270" size="0,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="newDate" location="96,67" id="com.example.conter/CountOccurredDate@newDate+com.example.conter/Counter@|com.example.conter/CountOccurredDate#newDate" multiplicityLabel="//@children.3/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - newDate" location="160,124" size="54,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="128,124" size="18,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.example.conter/Counter-Standard::Instantiate->com.example.conter/CountOccurredDate*com.example.conter/Counter-Soyatec::Import->com.example.conter/CountOccurredDate" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate»" size="104,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="109,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="167,67"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
