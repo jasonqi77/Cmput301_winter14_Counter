@@ -8,4 +8,25 @@ Class: FileManager.java
 Description: This class is used to load and store all counter data from the file for the whole app.
 
 Class: SummarHandler.java
-Description: This class is used to get all summary information for SummaryActivity to show.
+Description: This class is used to get all summary information for SummaryActivity to show.\
+
+Class: MainActivity.java
+Description: The main page of the app.
+
+Class: CreateActivity.java
+Description: The page used to create a new counter.
+
+Class: LoadActivity.java
+Description: The page used to load a existed counter.
+
+Class: DeleteActivity.java
+Description: The page used to delete a counter.
+
+Class: CounterActivity.java
+Description: The page for counter, which will shou the name, total count of the counter and counter's functions bottons.
+
+Class: RenameActivity.java
+Description: The page used to rename a counter.
+
+Class: SummaryActivity.java
+Description: The page used to show a counter's summary.
