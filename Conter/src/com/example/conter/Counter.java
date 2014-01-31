@@ -1,6 +1,7 @@
 package com.example.conter;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * @author  bqi
@@ -18,12 +19,13 @@ public class Counter
 	/**
 	 * @uml.property  name="date"
 	 */
-	private ArrayList<CountOccurredDate> date;
+	//private ArrayList<CountOccurredDate> date;
+	private ArrayList<Date> date;
 	/**
 	 * @uml.property  name="newDate"
 	 * @uml.associationEnd  
 	 */
-	private CountOccurredDate newDate;
+	private Date newDate;
 	
 	/**
 	 * Constructor of CounterDetail, initialize all variables.
@@ -33,8 +35,8 @@ public class Counter
 	{
 		this.name=name;
 		this.count=0;
-		this.date = new ArrayList<CountOccurredDate>();
-		this.newDate= new CountOccurredDate();
+		this.date = new ArrayList<Date>();
+		//this.newDate= new CountOccurredDate();
 	}
 	
 	/**
@@ -43,6 +45,7 @@ public class Counter
 	 * @uml.property  name="count"
 	 */
 	public int getCount()
+	
 	{
 	
 		return count;
@@ -54,6 +57,7 @@ public class Counter
 	 * @uml.property  name="count"
 	 */
 	public void setCount(int count)
+	
 	{
 	
 		this.count = count;
@@ -65,6 +69,7 @@ public class Counter
 	 * @uml.property  name="name"
 	 */
 	public String getName()
+	
 	{
 	
 		return name;
@@ -76,6 +81,7 @@ public class Counter
 	 * @uml.property  name="name"
 	 */
 	public void setName(String name)
+	
 	{
 	
 		this.name = name;
@@ -86,7 +92,7 @@ public class Counter
 	 */
 	public void addDate()
 	{	
-		newDate = new CountOccurredDate(System.currentTimeMillis());
+		newDate = new Date();
 		date.add(newDate);
 	}
 	
@@ -95,7 +101,8 @@ public class Counter
 	 * @return  the list of times that all counts occured
 	 * @uml.property  name="date"
 	 */
-	public ArrayList<CountOccurredDate> getDate()
+	public ArrayList<Date> getDate()
+	
 	{
 		return date;
 	}
@@ -116,6 +123,35 @@ public class Counter
 	public String toString()
 	{
 		return name + "\t\t\t\t\tCount:" + count;
+	}
+
+
+	/**
+	 * @uml.property  name="counterCollection"
+	 * @uml.associationEnd  inverse="counter:com.example.conter.CounterCollection"
+	 */
+	private CounterCollection counterCollection;
+
+	/**
+	 * Getter of the property <tt>counterCollection</tt>
+	 * @return  Returns the counterCollection.
+	 * @uml.property  name="counterCollection"
+	 */
+	public CounterCollection getCounterCollection()
+	{
+
+		return counterCollection;
+	}
+
+	/**
+	 * Setter of the property <tt>counterCollection</tt>
+	 * @param counterCollection  The counterCollection to set.
+	 * @uml.property  name="counterCollection"
+	 */
+	public void setCounterCollection(CounterCollection counterCollection)
+	{
+
+		this.counterCollection = counterCollection;
 	}
 
 }

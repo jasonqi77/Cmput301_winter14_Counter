@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1419,1393" id="com.example.conter" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020436F6E7465722F627169">
+  <children xsi:type="editmodel:ClassEditModel" name="MainActivity" location="930,990" size="163,85" id="com.example.conter/MainActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onBackPressed" id="com.example.conter/MainActivity#onBackPressed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/MainActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Counter" location="333,462" size="155,157" id="com.example.conter/Counter">
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="count" id="com.example.conter/Counter#count"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="date" id="com.example.conter/Counter#date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="com.example.conter/Counter#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,72">
+      <children xsi:type="editmodel:MethodEditModel" name="addDate" id="com.example.conter/Counter#addDate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetDate" id="com.example.conter/Counter#resetDate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="com.example.conter/Counter#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/Counter@counter+com.example.conter/CounterCollection@counterCollection" source="//@children.1" target="//@children.7" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="155,109" id="com.example.conter/Counter@counter+com.example.conter/CounterCollection@counterCollection|com.example.conter/Counter#counter" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" aggregationKind="Composition" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="495,551" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="495,578" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counterCollection" location="0,47" id="com.example.conter/Counter@counter+com.example.conter/CounterCollection@counterCollection|com.example.conter/CounterCollection#counterCollection" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counterCollection" location="512,551" size="98,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="592,578" size="18,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.4 //@children.4/@sourceConnections.2" name="CreateActivity" location="1236,378" size="163,85" id="com.example.conter/CreateActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onBackPressed" id="com.example.conter/CreateActivity#onBackPressed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/CreateActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.3 //@children.4/@sourceConnections.1" name="LoadActivity" location="675,872" size="187,164" id="com.example.conter/LoadActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onBackPressed" id="com.example.conter/LoadActivity#onBackPressed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/LoadActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="164,69">
+      <children xsi:type="editmodel:ClassEditModel" name="CountComparator" size="164,67" id="com.example.conter/LoadActivity$CountComparator">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+          <children xsi:type="editmodel:MethodEditModel" name="compare" id="com.example.conter/LoadActivity$CountComparator#compare(Lcom.example.conter.Counter;Lcom.example.conter.Counter;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.0 //@children.5/@sourceConnections.0" name="FileManager" location="852,571" size="126,85" id="com.example.conter/FileManager">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,54">
+      <children xsi:type="editmodel:MethodEditModel" name="loadFromFile" id="com.example.conter/FileManager#loadFromFile()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveInFile" id="com.example.conter/FileManager#saveInFile(Lcom.example.conter.CounterCollection;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/FileManager@fm+com.example.conter/SummaryActivity@" source="//@children.4" target="//@children.6" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fm" location="0,75" id="com.example.conter/FileManager@fm+com.example.conter/SummaryActivity@|com.example.conter/FileManager#fm" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fm" location="821,626" size="24,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="839,653" size="6,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="168,0" id="com.example.conter/FileManager@fm+com.example.conter/SummaryActivity@|com.example.conter/SummaryActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/FileManager@fm+com.example.conter/LoadActivity@" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fm" location="4,85" id="com.example.conter/FileManager@fm+com.example.conter/LoadActivity@|com.example.conter/FileManager#fm" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fm" location="863,663" size="24,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="843,663" size="6,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="181,0" id="com.example.conter/FileManager@fm+com.example.conter/LoadActivity@|com.example.conter/LoadActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/FileManager@fm+com.example.conter/CreateActivity@" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.2/@children.2" label="//@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fm" location="126,10" id="com.example.conter/FileManager@fm+com.example.conter/CreateActivity@|com.example.conter/FileManager#fm" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fm" location="985,588" size="24,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="985,561" size="6,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,85" id="com.example.conter/FileManager@fm+com.example.conter/CreateActivity@|com.example.conter/CreateActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/FileManager@fm+com.example.conter/DeleteActivity@" source="//@children.4" target="//@children.9" targetEnd="//@children.4/@sourceConnections.3/@children.2" label="//@children.4/@sourceConnections.3/@children.0" sourceEnd="//@children.4/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fm" location="116,85" id="com.example.conter/FileManager@fm+com.example.conter/DeleteActivity@|com.example.conter/FileManager#fm" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fm" location="937,663" size="24,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="975,663" size="6,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" id="com.example.conter/FileManager@fm+com.example.conter/DeleteActivity@|com.example.conter/DeleteActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/FileManager@fm+com.example.conter/RenameActivity@" source="//@children.4" target="//@children.8" targetEnd="//@children.4/@sourceConnections.4/@children.2" label="//@children.4/@sourceConnections.4/@children.0" sourceEnd="//@children.4/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fm" location="0,10" id="com.example.conter/FileManager@fm+com.example.conter/RenameActivity@|com.example.conter/FileManager#fm" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fm" location="821,588" size="24,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="839,561" size="6,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,85" id="com.example.conter/FileManager@fm+com.example.conter/RenameActivity@|com.example.conter/RenameActivity#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.2" name="CounterActivity" location="930,294" size="163,85" id="com.example.conter/CounterActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onBackPressed" id="com.example.conter/CounterActivity#onBackPressed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/CounterActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/FileManager@fm+com.example.conter/CounterActivity@" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="23,85" id="com.example.conter/FileManager@fm+com.example.conter/CounterActivity@|com.example.conter/CounterActivity#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fm" location="101,0" id="com.example.conter/FileManager@fm+com.example.conter/CounterActivity@|com.example.conter/FileManager#fm" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fm" location="960,551" size="24,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="940,551" size="6,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.1 //@children.4/@sourceConnections.0" name="SummaryActivity" location="333,735" size="178,218" id="com.example.conter/SummaryActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,90">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/SummaryActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetDay" id="com.example.conter/SummaryActivity#resetDay()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetHour" id="com.example.conter/SummaryActivity#resetHour()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetMonth" id="com.example.conter/SummaryActivity#resetMonth()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetWeek" id="com.example.conter/SummaryActivity#resetWeek()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="155,69">
+      <children xsi:type="editmodel:ClassEditModel" name="DateComparator" size="155,67" id="com.example.conter/SummaryActivity$DateComparator">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+          <children xsi:type="editmodel:MethodEditModel" name="compare" id="com.example.conter/SummaryActivity$DateComparator#compare(Ljava.util.Date;Ljava.util.Date;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="CounterCollection" location="617,524" size="191,175" id="com.example.conter/CounterCollection">
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="counters" id="com.example.conter/CounterCollection#counters"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,126">
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="com.example.conter/CounterCollection#add(Lcom.example.conter.Counter;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addDate" id="com.example.conter/CounterCollection#addDate(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="com.example.conter/CounterCollection#delete(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetDate" id="com.example.conter/CounterCollection#resetDate(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCount" id="com.example.conter/CounterCollection#setCount(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setName" id="com.example.conter/CounterCollection#setName(Ljava.lang.String;I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/FileManager@" source="//@children.7" target="//@children.4" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="191,89" id="com.example.conter/CounterCollection@counter+com.example.conter/FileManager@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="815,593" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="815,620" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" id="com.example.conter/CounterCollection@counter+com.example.conter/FileManager@|com.example.conter/FileManager#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/SummaryActivity@" source="//@children.7" target="//@children.6" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="10,175" id="com.example.conter/CounterCollection@counter+com.example.conter/SummaryActivity@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="634,706" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="602,706" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,10" id="com.example.conter/CounterCollection@counter+com.example.conter/SummaryActivity@|com.example.conter/SummaryActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/CounterActivity@" source="//@children.7" target="//@children.5" targetEnd="//@children.7/@sourceConnections.2/@children.2" label="//@children.7/@sourceConnections.2/@children.0" sourceEnd="//@children.7/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="191,10" id="com.example.conter/CounterCollection@counter+com.example.conter/CounterActivity@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="815,541" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="815,514" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,85" id="com.example.conter/CounterCollection@counter+com.example.conter/CounterActivity@|com.example.conter/CounterActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/LoadActivity@" source="//@children.7" target="//@children.3" targetEnd="//@children.7/@sourceConnections.3/@children.2" label="//@children.7/@sourceConnections.3/@children.0" sourceEnd="//@children.7/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="124,175" id="com.example.conter/CounterCollection@counter+com.example.conter/LoadActivity@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="748,706" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="716,706" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" id="com.example.conter/CounterCollection@counter+com.example.conter/LoadActivity@|com.example.conter/LoadActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/CreateActivity@" source="//@children.7" target="//@children.2" targetEnd="//@children.7/@sourceConnections.4/@children.2" label="//@children.7/@sourceConnections.4/@children.0" sourceEnd="//@children.7/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="181,0" id="com.example.conter/CounterCollection@counter+com.example.conter/CreateActivity@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="743,504" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="805,504" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,75" id="com.example.conter/CounterCollection@counter+com.example.conter/CreateActivity@|com.example.conter/CreateActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/DeleteActivity@" source="//@children.7" target="//@children.9" targetEnd="//@children.7/@sourceConnections.5/@children.2" label="//@children.7/@sourceConnections.5/@children.0" sourceEnd="//@children.7/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="181,175" id="com.example.conter/CounterCollection@counter+com.example.conter/DeleteActivity@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.5/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.5/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="743,706" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="805,706" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" id="com.example.conter/CounterCollection@counter+com.example.conter/DeleteActivity@|com.example.conter/DeleteActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.example.conter/CounterCollection@counter+com.example.conter/RenameActivity@" source="//@children.7" target="//@children.8" targetEnd="//@children.7/@sourceConnections.6/@children.2" label="//@children.7/@sourceConnections.6/@children.0" sourceEnd="//@children.7/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counter" location="27,0" id="com.example.conter/CounterCollection@counter+com.example.conter/RenameActivity@|com.example.conter/CounterCollection#counter" attachSource="true" multiplicityLabel="//@children.7/@sourceConnections.6/@children.1/@children.1" roleLabel="//@children.7/@sourceConnections.6/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counter" location="651,504" size="48,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="619,504" size="18,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="134,85" id="com.example.conter/CounterCollection@counter+com.example.conter/RenameActivity@|com.example.conter/RenameActivity#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.6 //@children.4/@sourceConnections.4" name="RenameActivity" location="510,285" size="163,85" id="com.example.conter/RenameActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onBackPressed" id="com.example.conter/RenameActivity#onBackPressed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/RenameActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.5 //@children.4/@sourceConnections.3" name="DeleteActivity" location="1035,795" size="187,164" id="com.example.conter/DeleteActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onBackPressed" id="com.example.conter/DeleteActivity#onBackPressed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="com.example.conter/DeleteActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="164,69">
+      <children xsi:type="editmodel:ClassEditModel" name="CountComparator" size="164,67" id="com.example.conter/DeleteActivity$CountComparator">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+          <children xsi:type="editmodel:MethodEditModel" name="compare" id="com.example.conter/DeleteActivity$CountComparator#compare(Lcom.example.conter.Counter;Lcom.example.conter.Counter;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

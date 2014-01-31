@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 /**
  * @author  bqi
  */
@@ -22,7 +23,7 @@ public class SummaryActivity extends Activity
 	 */
 	private CounterCollection counter;
 	private ArrayList<Counter> counters;
-	private ArrayList<CountOccurredDate> date;
+	private ArrayList<Date> date;
 	private ArrayList<String> hour;
 	private ArrayList<String> week;
 	private ArrayList<String> month;
@@ -47,7 +48,7 @@ public class SummaryActivity extends Activity
 	 * @uml.property  name="testDate"
 	 * @uml.associationEnd  
 	 */
-	private CountOccurredDate testDate;
+	private Date testDate;
 	/**
 	 * @uml.property  name="fm"
 	 * @uml.associationEnd  
@@ -111,7 +112,7 @@ public class SummaryActivity extends Activity
 			count_month++;
 			count_day++;
 			testDate = date.get(0);
-			testDate = new CountOccurredDate(testDate.getYear(), testDate.getMonth(), testDate.getDate());
+			testDate = new Date(testDate.getYear(), testDate.getMonth(), testDate.getDate());
 			diff = 6 - testDate.getDay();
 			testDate.setDate(testDate.getDate()+diff);
 		}
@@ -124,6 +125,7 @@ public class SummaryActivity extends Activity
 				if (date.get(i).getMonth() == curr_month)
 				{
 					count_month++;
+					
 					if (date.get(i).getDate() == curr_day)
 					{
 						count_day++;
@@ -161,7 +163,7 @@ public class SummaryActivity extends Activity
 							week.add("Week of " + mon[curr_month] + " " + curr_week + " -- " + count_week);
 							resetWeek();
 							testDate = date.get(i);
-							testDate = new CountOccurredDate(testDate.getYear(), testDate.getMonth(), testDate.getDate());
+							testDate = new Date(testDate.getYear(), testDate.getMonth(), testDate.getDate());
 							diff = 6 - testDate.getDay();
 							testDate.setDate(testDate.getDate()+diff);
 							curr_week = date.get(i).getDate();
@@ -188,6 +190,9 @@ public class SummaryActivity extends Activity
 				}
 				else
 				{
+					Toast.makeText(SummaryActivity.this,
+	                        "" + curr_day, Toast.LENGTH_SHORT)
+	                        .show();
 					if (testDate.compareTo(new Date(date.get(i).getYear(), date.get(i).getMonth(), date.get(i).getDate())) >=0 )
 					{
 						count_week++;
@@ -197,7 +202,7 @@ public class SummaryActivity extends Activity
 						week.add("Week of " + mon[curr_month] + " " + curr_week + " -- " + count_week);
 						resetWeek();
 						testDate = date.get(i);
-						testDate = new CountOccurredDate(testDate.getYear(), testDate.getMonth(), testDate.getDate());
+						testDate = new Date(testDate.getYear(), testDate.getMonth(), testDate.getDate());
 						diff = 6 - testDate.getDay();
 						testDate.setDate(testDate.getDate()+diff);
 						curr_week = date.get(i).getDate();
@@ -237,7 +242,7 @@ public class SummaryActivity extends Activity
 					week.add("Week of " + mon[curr_month] + " " + curr_week + " -- " + count_week);
 					resetWeek();
 					testDate = date.get(i);
-					testDate = new CountOccurredDate(testDate.getYear(), testDate.getMonth(), testDate.getDate());
+					testDate = new Date(testDate.getYear(), testDate.getMonth(), testDate.getDate());
 					diff = 6 - testDate.getDay();
 					testDate.setDate(testDate.getDate()+diff);
 					curr_week = date.get(i).getDate();
@@ -265,7 +270,7 @@ public class SummaryActivity extends Activity
 					count_month++;
 					count_day++;
 					count_hour++;		
-			}
+			} 
 			
 		}
 		
@@ -329,9 +334,9 @@ public class SummaryActivity extends Activity
 	 * The comparator of Date
 	 * Used to sort the pressed dates of a counter
 	 */
-	public static class DateComparator implements Comparator<CountOccurredDate> {
+	public static class DateComparator implements Comparator<Date> {
 	      @Override
-	      public int compare(CountOccurredDate s, CountOccurredDate t) {
+	      public int compare(Date s, Date t) {
 	         return s.compareTo(t);
 	      }
 	  }
