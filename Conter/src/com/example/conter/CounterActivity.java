@@ -24,6 +24,7 @@ public class CounterActivity extends Activity
 	private int num=0;
 	private int index;
 	private String cname;
+	
 	/**
 	 * @uml.property  name="counter"
 	 * @uml.associationEnd  
